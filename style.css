@@ -1,3 +1,9 @@
 * {
   background-color: bisque;
 }
+.container {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  min-height: 30vh;
+}
