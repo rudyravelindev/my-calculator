@@ -7,8 +7,36 @@
     <title>Calculator</title>
   </head>
   <body>
-    <div class="container">
-      <h1>Welcome to your Simple Calculator</h1>
+    <h1>Welcome to your Simple Calculator</h1>
+    <div id="calculator">
+      <input type="text" id="display" readonly value="0" />
+      <!-- Operators -->
+      <button id="btn-add" data-type="operator" data-value="+">+</button>
+      <button id="btn-subtract" data-type="operator" data-value="-">-</button>
+      <button id="btn-multiply" data-type="operator" data-value="*">*</button>
+      <button id="btn-divide" data-type="operator" data-value="/">/</button>
+      <!-- Numbers -->
+      <button id="btn-0" data-type="number" data-value="0">0</button>
+      <button id="btn-1" data-type="number" data-value="1">1</button>
+      <button id="btn-2" data-type="number" data-value="2">2</button>
+      <button id="btn-3" data-type="number" data-value="3">3</button>
+      <button id="btn-4" data-type="number" data-value="4">4</button>
+      <button id="btn-5" data-type="number" data-value="5">5</button>
+      <button id="btn-6" data-type="number" data-value="6">6</button>
+      <button id="btn-7" data-type="number" data-value="7">7</button>
+      <button id="btn-8" data-type="number" data-value="8">8</button>
+      <button id="btn-9" data-type="number" data-value="9">9</button>
+
+      <!-- Functions -->
+      <button id="btn-equals" data-type="function" data-action="equal">
+        =
+      </button>
+      <button id="btn-decimal" data-type="function" data-action="point">
+        .
+      </button>
+      <button id="btn-clear" data-type="function" data-action="clear">
+        AC
+      </button>
     </div>
   </body>
   <script src="./script.js"></script>

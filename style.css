@@ -1,9 +1,121 @@
 * {
   background-color: bisque;
 }
-.container {
+
+h1 {
   display: grid;
   justify-content: center;
   align-items: center;
-  min-height: 30vh;
+  min-height: 10vh;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  color: #333;
+}
+
+#calculator {
+  width: 400px;
+  margin: 80px auto;
+  background: #2c2c2c;
+  border-radius: 20px;
+  padding: 30px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+
+  /* Grid layout */
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+}
+
+#display {
+  grid-column: span 4;
+  width: 100%;
+  height: 80px;
+  background: #1a1a1a;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  text-align: right;
+  padding: 0 20px;
+  font-size: 2.5em;
+  font-family: 'Courier New', monospace;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+}
+
+#calculator button {
+  height: 70px;
+  border: none;
+  border-radius: 10px;
+  font-size: 1.5em;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+/* Number buttons */
+[data-type='number'] {
+  background: #666;
+  color: white;
+}
+
+[data-type='number']:hover {
+  background: #777;
+}
+
+[data-type='number']:active {
+  background: #555;
+  transform: scale(0.98);
+}
+
+/* Operator buttons */
+[data-type='operator'] {
+  background: #ff9500;
+  color: white;
+  font-size: 1.5em;
+}
+
+[data-type='operator']:hover {
+  background: #ffaa33;
+}
+
+[data-type='operator']:active {
+  background: #e68500;
+  transform: scale(0.98);
+}
+
+/* Function buttons */
+[data-type='function'] {
+  background: #a6a6a6;
+  color: black;
+}
+
+[data-type='function']:hover {
+  background: #bfbfbf;
+}
+
+[data-type='function']:active {
+  transform: scale(0.98);
+}
+
+/* Special button overrides */
+#btn-clear {
+  background: #ff3b30;
+  color: white;
+}
+
+#btn-clear:hover {
+  background: #ff5c52;
+}
+
+#btn-equals {
+  background: #ff9500;
+  color: white;
+}
+
+#btn-equals:hover {
+  background: #ffaa33;
+}
+
+#btn-0 {
+  grid-column: span 2;
 }
