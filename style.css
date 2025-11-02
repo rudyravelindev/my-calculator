@@ -1,5 +1,5 @@
 * {
-  background-color: bisque;
+  background-color: #efece3;
 }
 
 h1 {
@@ -9,16 +9,17 @@ h1 {
   min-height: 10vh;
   margin: 0;
   font-family: Arial, sans-serif;
-  color: #333;
+  color: #000000;
 }
 
 #calculator {
   width: 400px;
   margin: 80px auto;
-  background: #2c2c2c;
+  background: #ffffff;
   border-radius: 20px;
   padding: 30px;
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+  border: 2px solid #4a70a9;
 
   /* Grid layout */
   display: grid;
@@ -30,8 +31,8 @@ h1 {
   grid-column: span 4;
   width: 100%;
   height: 80px;
-  background: #1a1a1a;
-  color: white;
+  background: #000000;
+  color: #efece3;
   border: none;
   border-radius: 10px;
   text-align: right;
@@ -50,70 +51,70 @@ h1 {
   font-weight: bold;
   cursor: pointer;
   transition: all 0.2s ease;
+  color: #000000;
 }
 
-/* Number buttons */
 [data-type='number'] {
-  background: #666;
-  color: white;
+  background: #efece3;
+  border: 2px solid #4a70a9;
 }
 
 [data-type='number']:hover {
-  background: #777;
+  background: #e0dcd3;
 }
 
 [data-type='number']:active {
-  background: #555;
+  background: #d1cdc5;
   transform: scale(0.98);
 }
 
-/* Operator buttons */
 [data-type='operator'] {
-  background: #ff9500;
-  color: white;
+  background: #8fabd4;
+  color: #000000;
   font-size: 1.5em;
+  border: 2px solid #4a70a9;
 }
 
 [data-type='operator']:hover {
-  background: #ffaa33;
+  background: #7f9bc4; /* Darker blue */
 }
 
 [data-type='operator']:active {
-  background: #e68500;
+  background: #6f8bb4;
   transform: scale(0.98);
 }
 
-/* Function buttons */
 [data-type='function'] {
-  background: #a6a6a6;
-  color: black;
+  background: #4a70a9;
+  color: #efece3;
+  border: 2px solid #000000;
 }
 
 [data-type='function']:hover {
-  background: #bfbfbf;
+  background: #3a6099;
 }
 
 [data-type='function']:active {
   transform: scale(0.98);
 }
 
-/* Special button overrides */
 #btn-clear {
-  background: #ff3b30;
-  color: white;
+  background: #4a70a9;
+  color: #efece3;
 }
 
 #btn-clear:hover {
-  background: #ff5c52;
+  background: #3a6099;
 }
 
 #btn-equals {
-  background: #ff9500;
-  color: white;
+  background: #8fabd4;
+  color: #000000;
+  border: 2px solid #4a70a9;
 }
 
 #btn-equals:hover {
-  background: #ffaa33;
+  background: #7f9bc4;
 }
 
 #btn-0 {
